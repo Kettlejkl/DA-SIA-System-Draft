@@ -1,0 +1,16 @@
+# Core
+flask==3.1.0
+flask-cors==5.0.0
+python-dotenv==1.0.1
+gunicorn==23.0.0
+
+# ML
+torch==2.3.0
+torchvision==0.18.0
+ultralytics==8.3.0        # YOLOv8
+opencv-python==4.10.0.84
+numpy==1.26.4
+Pillow==10.3.0
+
+# HTTP (translation API calls)
+requests==2.32.3
