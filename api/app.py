@@ -1,7 +1,10 @@
 # api/app.py
-from app import create_app
-from app.config import DevelopmentConfig, ProductionConfig
+import sys
 import os
 
-config = ProductionConfig if os.getenv("FLASK_ENV") == "production" else DevelopmentConfig
-app = create_app(config)
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'backend'))
+
+from app import create_app
+from app.config import ProductionConfig
+
+app = create_app(ProductionConfig)
